@@ -11,9 +11,7 @@
     "pretest": "rimraf ./.nyc_output",
     "test": "cross-env NODE_ENV=test nyc mocha --recursive --require @babel/register test",
     "build": "rimraf ./lib && babel src -d lib",
-    "prepare": "npm run build",
-    "preversion": "kacl prerelease",
-    "version": "kacl release && git add CHANGELOG.md"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
